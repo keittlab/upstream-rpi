@@ -5,7 +5,7 @@ OUTPUT=`/usr/bin/atq`
 echo $OUTPUT
 
 if [ -z "${OUTPUT}" ]; then
-	echo "No scheduled jobs. Setting rescordings"
+	echo "No scheduled jobs. Setting recordings"
 	# Sound using Andrea
 	/home/pi/upstream/at-30before-sunrise-tomorrow.bash "/home/pi/upstream/upstream-sound.bash 3600" >> /home/pi/upstream/data/soundsetting-`(/bin/date +%Y%m%d)`.log
 	/home/pi/upstream/at-30before-sunset.bash "/home/pi/upstream/upstream-sound.bash 3600" >> /home/pi/upstream/data/soundsetting-`(/bin/date +%Y%m%d)`.log
