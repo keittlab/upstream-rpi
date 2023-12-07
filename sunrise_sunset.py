@@ -27,11 +27,11 @@ r = requests.get(url = URL)
 data = r.json()
 cal = calendar.Calendar()
 for year in years:
-    print(year)
+#    print(year)
     for month in range(1,13):
-        print(month)
+#        print(month)
         for date in cal.itermonthdates(year, month):
-            print(date)
+#            print(date)
             check = URL + str(date)
             r = requests.get(url = check)
             data = r.json()
